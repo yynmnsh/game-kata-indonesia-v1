@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Kata Indonesia</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Homepage/Menu -->
+        <div id="home-page" class="page active">
+            <div class="container">
+                <h1 class="main-title">Game Kata Indonesia</h1>
+                <p class="subtitle">Pilih permainan favorit Anda</p>
+                
+                <div class="games-grid">
+                    <div class="game-card" data-game="katla">
+                        <div class="game-icon">🔤</div>
+                        <h2>Katla</h2>
+                        <p>Tebak kata 5 huruf dalam 6 percobaan</p>
+                    </div>
+                    
+                    <div class="game-card" data-game="susun-kata">
+                        <div class="game-icon">📦</div>
+                        <h2>Susun Kata</h2>
+                        <p>Bentuk kata dari huruf di kotak</p>
+                    </div>
+                    
+                    <div class="game-card" data-game="sarang-kata">
+                        <div class="game-icon">🐝</div>
+                        <h2>Sarang Kata</h2>
+                        <p>Buat kata dari 7 huruf</p>
+                    </div>
+                    
+                    <div class="game-card" data-game="kaitan">
+                        <div class="game-icon">🔗</div>
+                        <h2>Kaitan</h2>
+                        <p>Kelompokkan kata yang berhubungan</p>
+                    </div>
+                    
+                    <div class="game-card" data-game="tts-mini">
+                        <div class="game-icon">✏️</div>
+                        <h2>TTS Mini</h2>
+                        <p>Teka-teki silang 5×5</p>
+                    </div>
+                </div>
+                
+                <div class="home-buttons">
+                    <button class="btn btn-secondary" id="stats-btn">📊 Statistik</button>
+                    <button class="btn btn-secondary" id="refresh-words-btn">🔄 Perbarui Kata</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Individual Game Pages -->
+        <div id="katla-page" class="page game-page"></div>
+        <div id="susun-kata-page" class="page game-page"></div>
+        <div id="sarang-kata-page" class="page game-page"></div>
+        <div id="kaitan-page" class="page game-page"></div>
+        <div id="tts-mini-page" class="page game-page"></div>
+
+        <!-- Stats Modal -->
+        <div id="stats-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Statistik Permainan</h2>
+                <div id="stats-content"></div>
+            </div>
+        </div>
+
+        <!-- Settings Modal -->
+        <div id="settings-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Pengaturan</h2>
+                <div id="settings-content"></div>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loading-indicator" class="loading-indicator">
+            <div class="spinner"></div>
+            <p>Memuat...</p>
+        </div>
+    </div>
+
+    <script src="data/wordlists.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/word-fetcher.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/katla.js"></script>
+    <script src="js/susun-kata.js"></script>
+    <script src="js/sarang-kata.js"></script>
+    <script src="js/kaitan.js"></script>
+    <script src="js/tts-mini.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "game-kata-indonesia",
+  "version": "2.0.0",
+  "description": "Indonesian word games collection - Fixed and improved version",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx http-server -p 8000 -c-1",
+    "dev": "npx http-server -p 8000 -c-1 -o"
+  },
+  "keywords": [
+    "indonesian",
+    "word-games",
+    "wordle",
+    "spelling-bee",
+    "letter-box",
+    "puzzle",
+    "bahasa-indonesia"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/game-kata-indonesia"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
